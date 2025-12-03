@@ -1,7 +1,8 @@
 # Terraform AWS Infrastructure Project
 
-This repository showcases an AWS environment deployed with Terraform.  
-It includes a VPC, subnet, internet gateway, route table, security group, key pair, EC2 instance, Docker installation via cloud-init, and OS-aware SSH configuration.
+This project is part of the [IAC Portfolio](../README.md) repository, which contains multiple Infrastructure as Code projects (Terraform, Ansible, CloudFormation, etc.).  
+
+It showcases an AWS environment deployed with Terraform, including a VPC, subnet, internet gateway, route table, security group, key pair, EC2 instance, Docker installation via cloud-init, and OS-aware SSH configuration.
 
 ---
 
@@ -15,6 +16,7 @@ It includes a VPC, subnet, internet gateway, route table, security group, key pa
 - [Deployment Instructions](#deployment-instructions)
 - [Screenshots](#screenshots)
 - [What This Project Demonstrates](#what-this-project-demonstrates)
+- [Back to IAC Portfolio](#back-to-iac-portfolio)
 
 ---
 
@@ -109,6 +111,8 @@ host_os = "osx"
 **Usage:**
 
 ```bash
+cd terraform-aws-project
+terraform init
 terraform apply -var-file="dev.tfvars"
 ```
 
@@ -153,6 +157,7 @@ Host ${hostname}
 ### Windows (default)
 
 ```bash
+cd terraform-aws-project
 terraform init
 terraform apply
 ```
@@ -160,6 +165,7 @@ terraform apply
 ### macOS / Linux
 
 ```bash
+cd terraform-aws-project
 terraform apply -var-file="dev.tfvars"
 ```
 
@@ -168,19 +174,28 @@ terraform apply -var-file="dev.tfvars"
 ## Screenshots
 
 **Terraform Plan / Apply Output**
-![Terraform Plan](screenshots/terraform-plan.png)
-![Terraform Apply](screenshots/terraform-apply.png)
+
+```markdown
+![Terraform Plan](terraform-aws-project/screenshots/terraform-plan.png)
+![Terraform Apply](terraform-aws-project/screenshots/terraform-apply.png)
+```
 
 **AWS Console Resources**
-![VPC](screenshots/vpc.png)
-![Subnet](screenshots/subnet.png)
-![EC2 Instance](screenshots/ec2-instance.png)
+
+```markdown
+![VPC](terraform-aws-project/screenshots/vpc.png)
+![Subnet](terraform-aws-project/screenshots/subnet.png)
+![EC2 Instance](terraform-aws-project/screenshots/ec2-instance.png)
+```
 
 **Docker Installation / EC2 Access**
-![Docker PS](screenshots/docker-ps.png)
-![SSH Access](screenshots/ssh-access.png)
 
-> Screenshots are stored in the `screenshots/` directory.
+```markdown
+![Docker PS](terraform-aws-project/screenshots/docker-ps.png)
+![SSH Access](terraform-aws-project/screenshots/ssh-access.png)
+```
+
+> Screenshots are stored in the `terraform-aws-project/screenshots/` directory.
 
 ---
 
@@ -194,5 +209,12 @@ terraform apply -var-file="dev.tfvars"
 * Terraform data sources, variables, templates, and provisioners
 * OS-aware SSH automation
 * Hands-on AWS infrastructure experience
+* Portfolio-ready project documentation with screenshots
 
-````
+---
+
+## Back to IAC Portfolio
+
+[Return to IAC Portfolio main README](../README.md)
+
+```
