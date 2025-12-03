@@ -1,0 +1,34 @@
+# Terraform state files
+*.tfstate
+*.tfstate.backup
+.terraform/
+
+# Terraform variable files (may contain secrets like host OS, AWS keys)
+*.tfvars
+
+# Terraform plan output
+*.plan
+
+# Local logs or temporary files
+*.log
+*.bak
+
+# SSH keys
+*.pem
+*.key
+*.pub
+~/.ssh/*
+
+# OS-specific files
+.DS_Store
+Thumbs.db
+
+# VSCode settings
+.vscode/
+
+# Userdata or template files that might contain sensitive info
+userdata.tpl
+windows-ssh-config.tpl
+
+# Any environment variables or secret config files
+*.env
