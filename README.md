@@ -5,6 +5,27 @@ It includes a VPC, subnet, internet gateway, route table, security group, key pa
 
 ---
 
+## Table of Contents
+
+- [Prerequisites](#prerequisites)
+- [Project Structure](#project-structure)
+- [Terraform Configuration](#terraform-configuration)
+- [Variable Files](#variable-files)
+- [Templates and Scripts](#templates-and-scripts)
+- [Deployment Instructions](#deployment-instructions)
+- [Screenshots](#screenshots)
+- [What This Project Demonstrates](#what-this-project-demonstrates)
+
+---
+
+## Prerequisites
+
+- Terraform `v1.x`
+- AWS CLI configured with a profile (e.g., `vscode`)
+- SSH keypair for EC2 access (`~/.ssh/mtckey`)
+
+---
+
 ## Project Structure
 
 - `main.tf` - Core AWS resources (VPC, subnet, IGW, route tables, security group, key pair, EC2 instance)
@@ -144,6 +165,25 @@ terraform apply -var-file="dev.tfvars"
 
 ---
 
+## Screenshots
+
+**Terraform Plan / Apply Output**
+![Terraform Plan](screenshots/terraform-plan.png)
+![Terraform Apply](screenshots/terraform-apply.png)
+
+**AWS Console Resources**
+![VPC](screenshots/vpc.png)
+![Subnet](screenshots/subnet.png)
+![EC2 Instance](screenshots/ec2-instance.png)
+
+**Docker Installation / EC2 Access**
+![Docker PS](screenshots/docker-ps.png)
+![SSH Access](screenshots/ssh-access.png)
+
+> Screenshots are stored in the `screenshots/` directory.
+
+---
+
 ## What This Project Demonstrates
 
 * VPC and subnet design
@@ -155,4 +195,4 @@ terraform apply -var-file="dev.tfvars"
 * OS-aware SSH automation
 * Hands-on AWS infrastructure experience
 
-```
+````
