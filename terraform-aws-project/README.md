@@ -227,6 +227,6 @@ terraform apply -var-file="dev.tfvars"
 * Cloud-init automation (Docker installation)
 * Terraform data sources, variables, templates, and provisioners
 * OS-aware SSH automation
-* Hands-on AWS infrastructure experience
 
 ---
+
