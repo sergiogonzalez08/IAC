@@ -20,8 +20,7 @@ The Terraform AWS project implements a scalable and secure cloud environment, in
 - [Templates and Scripts](#templates-and-scripts)
 - [Deployment Instructions](#deployment-instructions)
 - [Screenshots](#screenshots)
-- [What This Project Demonstrates](#what-this-project-demonstrates)
-- [Back to IAC Portfolio](#back-to-iac-portfolio)
+- [Outline](#outline)
 
 ---
 
@@ -176,36 +175,51 @@ terraform apply -var-file="dev.tfvars"
 
 ---
 
-## Screenshots
-
-**Terraform Plan / Apply Output**
-
-```markdown
-![Terraform Plan](terraform-aws-project/screenshots/terraform-plan.png)
-![Terraform Apply](terraform-aws-project/screenshots/terraform-apply.png)
-```
-
-**AWS Console Resources**
-
-```markdown
-![VPC](terraform-aws-project/screenshots/vpc.png)
-![Subnet](terraform-aws-project/screenshots/subnet.png)
-![EC2 Instance](terraform-aws-project/screenshots/ec2-instance.png)
-```
-
-**Docker Installation / EC2 Access**
-
-```markdown
-![Docker PS](terraform-aws-project/screenshots/docker-ps.png)
-![SSH Access](terraform-aws-project/screenshots/ssh-access.png)
-```
-
-> Screenshots are stored in the `terraform-aws-project/screenshots/` directory.
+# Screenshots
 
 ---
 
-## What This Project Demonstrates
+## **Terraform Plan & Apply**
 
+### Terraform Plan
+![Terraform Plan](screenshots/terraform-plan.png)  
+*Terraform plan output*
+
+### Terraform Apply
+![Terraform Apply](screenshots/terraform-apply.png)  
+*Terraform apply output*
+
+---
+
+## **AWS Console Resources**
+
+### VPC
+![VPC](screenshots/vpc.png)  
+*VPC created*
+
+### Subnet
+![Subnet](screenshots/subnet.png)  
+*Subnet created*
+
+### EC2 Instance
+![EC2 Instance](screenshots/ec2-instance.png)  
+*EC2 instance created*
+
+---
+
+## **Docker Installation & SSH Access**
+
+### Docker
+![Docker PS](screenshots/docker-ps.png)  
+*Docker running on EC2*
+
+### SSH Access
+![SSH Access](screenshots/ssh-access.png)  
+*SSH access to EC2 instance*
+
+---
+
+## Outline
 * VPC and subnet design
 * Internet gateway and route configuration
 * Security group configuration
@@ -214,13 +228,5 @@ terraform apply -var-file="dev.tfvars"
 * Terraform data sources, variables, templates, and provisioners
 * OS-aware SSH automation
 * Hands-on AWS infrastructure experience
-* Portfolio-ready project documentation with screenshots
 
 ---
-
-## Back to IAC Portfolio
-
-[Return to IAC Portfolio main README](../README.md)
-
-```
-
