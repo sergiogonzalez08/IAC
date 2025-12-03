@@ -1,8 +1,13 @@
 # Terraform AWS Infrastructure Project
 
-This project is part of the [IAC Portfolio](../README.md) repository, which contains multiple Infrastructure as Code projects (Terraform, Ansible, CloudFormation, etc.).  
+The Terraform AWS project implements a scalable and secure cloud environment, including:
 
-It showcases an AWS environment deployed with Terraform, including a VPC, subnet, internet gateway, route table, security group, key pair, EC2 instance, Docker installation via cloud-init, and OS-aware SSH configuration.
+- Virtual Private Cloud (VPC) with public subnet
+- Internet gateway and route table configuration
+- Security group management
+- EC2 instance provisioning with SSH key pair
+- Docker installation and configuration via cloud-init
+- Operating system-aware SSH configuration for remote access
 
 ---
 
@@ -218,3 +223,4 @@ terraform apply -var-file="dev.tfvars"
 [Return to IAC Portfolio main README](../README.md)
 
 ```
+
